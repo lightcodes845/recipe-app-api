@@ -27,8 +27,6 @@ RUN python -m venv /py && \
 
 RUN ls ./app
 
-RUN ls ./app/app
-
 RUN ls /app
 
 RUN ls /app/app
