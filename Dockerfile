@@ -8,7 +8,7 @@ COPY ./requirements.dev.txt /tmp/requirements.dev.txt
 
 WORKDIR /app
 
-COPY ./ ./app
+COPY /app /app
 
 EXPOSE 8000
 
@@ -27,7 +27,11 @@ RUN python -m venv /py && \
 
 RUN ls ./app
 
+RUN ls ./app/app
+
 RUN ls /app
+
+RUN ls /app/app
 
 ENV PATH="/py/bin:$PATH"        
 
