@@ -8,7 +8,7 @@ COPY ./requirements.dev.txt /tmp/requirements.dev.txt
 
 WORKDIR /app
 
-COPY ./ /app
+COPY ./ ./app
 
 EXPOSE 8000
 
